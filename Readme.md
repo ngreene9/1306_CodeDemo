@@ -13,6 +13,6 @@ Atlanta is one of the fastest growing cities in the United States, but the rapid
 * Fixed issue where Marker components could sometimes be inappropriately sized
 
 ### Known Issues
-* **None as of now**![Happy](https://ih1.redbubble.net/image.1759229733.7812/flat,128x,075,f-pad,128x128,f8f8f8.jpg)
+* **None as of now** ![Happy](https://ih1.redbubble.net/image.1759229733.7812/flat,128x,075,f-pad,128x128,f8f8f8.jpg)
 >_but expecting this to change soon_
 ![Sadge](https://ih1.redbubble.net/image.1249935413.9251/flat,128x128,075,t-pad,128x128,f8f8f8.jpg)
