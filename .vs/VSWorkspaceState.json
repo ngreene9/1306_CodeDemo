@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "\\.expo-shared",
+    "\\assets",
+    "\\screens"
   ],
-  "SelectedNode": "\\C:\\Users\\noahr\\MappingIvanAllens",
   "PreviewInSolutionExplorer": false
 }
