@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
+    "",
     "\\.expo-shared",
     "\\assets",
+    "\\images",
     "\\screens"
   ],
+  "SelectedNode": "\\Readme.md",
   "PreviewInSolutionExplorer": false
 }
