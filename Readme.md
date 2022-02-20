@@ -2,6 +2,23 @@
 Atlanta is one of the fastest growing cities in the United States, but the rapid development has come at the cost of many of Atlanta's most storied civil rights landmarks. Our project intends to create an easy-to-navigate digital archive of civil rights era Atlanta. Users can view historic landmarks via our curated tour, or simply explore the archive on their own.
 # Release Notes
 
+## Version 0.2.0
+
+### New Features
+ * Added & formatted Screens to view detailed site information
+ * Added static images to site detail screen
+ * Added scrolling text box to site detail screen
+ * Reformatted code to place different screens in their own files, this will help with debugging in the future
+
+### Bug Fixes
+* Fixed issue where images would sometimes fail to load
+
+### Known Issues
+* When transitioning to site detail page from map screen, the image will sometimes stretch beyond the frame
+   of the site screen, causing the animation to appear slightly choppy
+* Bookmarking is a bit tricky, but we believe it can implemented in sprint 3 through the use of 
+  async-storage and the React-Native Navigation-Drawer
+
 ## Version 0.1.0
 
 ### New Features
