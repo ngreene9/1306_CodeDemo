@@ -1,15 +1,12 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Image, Modal, Alert, SafeAreaView, ImageBackground,ScrollView, StyleSheet, Text, View, Dimensions, TouchableOpacity } from 'react-native';
+import { Image, Modal, Alert, SafeAreaView, ImageBackground,ScrollView, StyleSheet, Text, View, Dimensions, TouchableOpacity} from 'react-native';
 import MapView, {Marker, Callout} from 'react-native-maps';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Montserrat_100Thin, Montserrat_100Thin_Italic, Montserrat_200ExtraLight, Montserrat_200ExtraLight_Italic, Montserrat_300Light, Montserrat_300Light_Italic, Montserrat_400Regular, Montserrat_400Regular_Italic, Montserrat_500Medium,Montserrat_500Medium_Italic, Montserrat_600SemiBold, Montserrat_600SemiBold_Italic, Montserrat_700Bold, Montserrat_700Bold_Italic, Montserrat_800ExtraBold, Montserrat_800ExtraBold_Italic,Montserrat_900Black,Montserrat_900Black_Italic 
 } from '@expo-google-fonts/montserrat'
 import { useFonts } from 'expo-font';
-
-//Make sure to inclue this export statement here or it won't import properly on App.js
-export default MapScreen;
 
 //Screen of the Unguided Tour Map
 function MapScreen( {navigation}) {
@@ -31,7 +28,7 @@ function MapScreen( {navigation}) {
         >
           <Callout tooltip>
             <View>
-            <TouchableOpacity onPress={() => navigation.navigate('Fulton County Stadium')}>
+            <TouchableOpacity onPressOut={() => navigation.navigate("Fulton County Stadium")}>
               <View style={mapStyles.bubble}>
                   <Text style={mapStyles.name}>Fulton County Stadium</Text>
                   <Image 
@@ -49,6 +46,9 @@ function MapScreen( {navigation}) {
     </View>
   );
 }
+
+//Make sure to inclue this export statement here or it won't import properly on App.js
+export default MapScreen;
 
 const mapStyles = StyleSheet.create({
   container: {

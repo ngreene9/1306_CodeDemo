@@ -3,9 +3,9 @@
     "",
     "\\.expo-shared",
     "\\assets",
-    "\\images",
+    "\\navigation",
     "\\screens"
   ],
-  "SelectedNode": "\\screens",
+  "SelectedNode": "\\App.js",
   "PreviewInSolutionExplorer": false
 }

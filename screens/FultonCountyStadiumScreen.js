@@ -7,11 +7,26 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Montserrat_100Thin, Montserrat_100Thin_Italic, Montserrat_200ExtraLight, Montserrat_200ExtraLight_Italic, Montserrat_300Light, Montserrat_300Light_Italic, Montserrat_400Regular, Montserrat_400Regular_Italic, Montserrat_500Medium,Montserrat_500Medium_Italic, Montserrat_600SemiBold, Montserrat_600SemiBold_Italic, Montserrat_700Bold, Montserrat_700Bold_Italic, Montserrat_800ExtraBold, Montserrat_800ExtraBold_Italic,Montserrat_900Black,Montserrat_900Black_Italic 
 } from '@expo-google-fonts/montserrat'
 import { useFonts } from 'expo-font';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 //Make sure to inclue this export statement here or it won't import properly on App.js
 export default FultonCountyStadiumScreen;
 
 function FultonCountyStadiumScreen( {navigation} ) {
+    const [bookmarkIcon, setBookMarkIcon ] = React.useState(require('../images/BookmarkHollow.png'));
+
+    React.useLayoutEffect(() => {
+        navigation.setOptions({
+             headerRight: () => (
+             <TouchableOpacity onPress={() => setBookMarkIcon(bookmarkIcon => require('../images/BookmarkSolid.png'))}>
+               <Image 
+                 style={{width: 30, height: 30}}
+                 source={bookmarkIcon} 
+                />
+             </TouchableOpacity>
+              ),
+        }, [navigation]);
+    })
     return (
 
         <View style={[styles.container, {flexDirection: "column"}]}>
@@ -25,7 +40,7 @@ function FultonCountyStadiumScreen( {navigation} ) {
             </View>
             <View style={{ flex: 3, backgroundColor: 'white' }}>
                 <ScrollView style={{marginVertical: 14, marginHorizontal: 14}} >
-                    <Text style={{ fontFamily:'Montserrat_400Regular', textAlign: 'center', fontSize: 20, color: 'black'}}>
+                    <Text style={{ fontFamily:'montserratRegular', textAlign: 'center', fontSize: 20, color: 'black'}}>
                     During his 1961 campaign for mayor of Atlanta, Ivan Allen Jr. promised to build a sports facility to attract a 
                     Major League Baseball team. After winning office, Allen chose a 47-acre plot in the Washington-Rawson neighborhood
                     for the building site, citing its proximity to the state capitol, downtown businesses, and major highways. Allen and The Atlanta 
@@ -66,4 +81,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  iconContainer: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    width: 120
+  }
 });
