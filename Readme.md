@@ -2,6 +2,18 @@
 Atlanta is one of the fastest growing cities in the United States, but the rapid development has come at the cost of many of Atlanta's most storied civil rights landmarks. Our project intends to create an easy-to-navigate digital archive of civil rights era Atlanta. Users can view historic landmarks via our curated tour, or simply explore the archive on their own.
 # Release Notes
 
+##Version 0.4.0
+
+### New Features
+  * Users can now access help menu for instructions on using the application
+  
+### Bug Fixes
+* Fixed some issues with async storage not working correctly
+
+### Known Issues
+* Several issues with AsyncStorage left unfixed
+* Missing information needed to complete final version of application
+
 ## Version 0.3.0
 
 ### New Features
