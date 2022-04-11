@@ -14,13 +14,27 @@ export default HomeScreen;
 function HomeScreen( {navigation} ) {
     return (
 
-    <ImageBackground style={{flex: 1}}source={{
-          uri: 'https://i.pinimg.com/originals/ad/d9/bf/add9bf15aa43b869e4da487ae23bae4d.jpg',
-     }}>
+    // <ImageBackground style={{flex: 1}}source={{
+    //       uri: 'https://i.pinimg.com/originals/ad/d9/bf/add9bf15aa43b869e4da487ae23bae4d.jpg',
+    //  }}>
+    <ImageBackground 
+    style={{flex: 1, justifyContent: 'center'}}
+    source={{
+        uri: 'https://i.pinimg.com/originals/ad/d9/bf/add9bf15aa43b869e4da487ae23bae4d.jpg',
+   }} 
+    resizeMode="cover">
 
-     <Text style={{textAlign: 'center', lineHeight: 560, fontWeight: 'bold', color: 'white', fontSize: 43, textShadowColor: 'black', textShadowOffset: {width: 1, height: 4 }, textShadowRadius: 10}}>
+     {/* <Text style={{textAlign: 'center', lineHeight: 560, fontWeight: 'bold', color: 'white', fontSize: 43, textShadowColor: 'black', textShadowOffset: {width: 1, height: 4 }, textShadowRadius: 10}}>
         Ivan Allen's Atlanta
-      </Text>
+      </Text> */}
+      <View style={styles.container}>
+        <Text style={{textAlign: 'center', fontWeight: '600', color: 'white', fontSize: 55, textShadowColor: 'black', textShadowOffset: {width: 1, height: 4 }, textShadowRadius: 10 }}>
+          Ivan Allen's
+        </Text>
+        <Text style={{textAlign: 'center', fontWeight: '600', color: 'white', fontSize: 55, textShadowColor: 'black', textShadowOffset: {width: 1, height: 4 }, textShadowRadius: 10 }}>
+          Atlanta
+        </Text>
+      </View>
 
      <View style={styles.container}>
         <TouchableOpacity
