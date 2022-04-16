@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Image, Modal, Alert, SafeAreaView, ImageBackground,ScrollView, StyleSheet, Text, View, Dimensions, TouchableOpacity} from 'react-native';
+import { Image, Modal, Alert, SafeAreaView, ImageBackground,ScrollView, StyleSheet, Text, View, Dimensions, TouchableOpacity, Linking} from 'react-native';
 import MapView, {Marker, Callout} from 'react-native-maps';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -16,7 +16,7 @@ function MapScreen( {navigation}) {
       region={{
       latitude: 33.739,
       longitude: -84.389,
-      latitudeDelta: 0.0922,
+      latitudeDelta: 0.0822,
       longitudeDelta: 0.04,
       }}
       >
@@ -42,7 +42,72 @@ function MapScreen( {navigation}) {
             </View>
           </Callout>
         </Marker>
-      </MapView>
+
+        <Marker
+        coordinate={{latitude: 33.73768, longitude: -84.38688}} 
+        title={'Summerhill Riots'}
+        description={'1966 riots following the police shooting of Harold Prather'}
+        >
+          <Callout tooltip>
+            <View>
+            <TouchableOpacity onPressOut={() => navigation.navigate("Summerhill Riots")}>
+              <View style={mapStyles.bubble}>
+                  <Text style={mapStyles.name}>Summerhill Riots</Text>
+                  <Image 
+                    style={mapStyles.image}
+                    source={require('../images/allenSummerhill.png')}
+                   />
+               </View>
+               <View style = {mapStyles.arrowBorder}/>
+               <View style ={mapStyles.arrow}/>
+            </TouchableOpacity>
+            </View>
+          </Callout>
+        </Marker>
+
+        <Marker
+        coordinate={{latitude: 33.755795, longitude: -84.381037}} 
+        title={'SNCC Headquarters'}
+        >
+          <Callout tooltip>
+            <View>
+            <TouchableOpacity onPressOut={() => navigation.navigate("SNCC Headquarters")}>
+              <View style={mapStyles.bubble}>
+                  <Text style={mapStyles.name}>SNCC Headquarters</Text>
+                  <Image 
+                    style={mapStyles.image}
+                    source={require('../images/snccHQ.jpg')}
+                   />
+               </View>
+               <View style = {mapStyles.arrowBorder}/>
+               <View style ={mapStyles.arrow}/>
+            </TouchableOpacity>
+            </View>
+          </Callout>
+        </Marker>
+
+        <Marker
+        coordinate={{latitude: 33.755659, longitude: -84.374387}} 
+        title={'MLK Funeral'}
+        >
+          <Callout tooltip>
+            <View>
+            <TouchableOpacity onPressOut={() => navigation.navigate("MLK Funeral")}>
+              <View style={mapStyles.bubble}>
+                  <Text style={mapStyles.name}>MLK Jr. Funeral</Text>
+                  <Image 
+                    style={mapStyles.image}
+                    source={require('../images/mlkFuneral.png')}
+                   />
+               </View>
+               <View style = {mapStyles.arrowBorder}/>
+               <View style ={mapStyles.arrow}/>
+            </TouchableOpacity>
+            </View>
+          </Callout>
+        </Marker>
+
+      </MapView>     
     </View>
   );
 }

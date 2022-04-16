@@ -10,9 +10,9 @@ import { useFonts } from 'expo-font';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 //Make sure to inclue this export statement here or it won't import properly on App.js
-export default FultonCountyStadiumScreen;
+export default SummerhillRiotScreen;
 
-function FultonCountyStadiumScreen( {navigation} ) {
+function SummerhillRiotScreen( {navigation} ) {
     const [bookmarkIcon, setBookMarkIcon ] = React.useState(require('../images/BookmarkHollow.png'));
 
     React.useLayoutEffect(() => {
@@ -30,7 +30,6 @@ function FultonCountyStadiumScreen( {navigation} ) {
     return (
 
         <View style={[styles.container, {flexDirection: "column"}]}>
-            
             <View style={{ flex: 3, backgroundColor: 'white' }}>
                 <ScrollView style={{marginVertical: 14, marginHorizontal: 14}} >
                     <View styles={{flex: 1}}>
@@ -38,46 +37,37 @@ function FultonCountyStadiumScreen( {navigation} ) {
                           style={{
                             resizeMode: "contain",
                           }}
-                          source={require('../images/fultonCounty.jpg')}
+                          source={require('../images/allenSummerhill.png')}
                         />
                     </View>
                     <Text style={{ fontFamily:'montserratLightItalic', textAlign: 'center', fontSize: 18, color: 'grey'}}>
-                    An aerial view of the newly constructed Fulton County Stadium
+                    An image clipped from a newspaper showing Allen right before riot begins. The picture shows the African American
+                    protestors surrounding Allen, who looks straight ahead calmly.
                     {'\n'}{'\n'}
                     </Text>
                     <Text style={{ fontFamily:'montserratRegular', textAlign: 'center', fontSize: 20, color: 'black'}}>
-                    During his 1961 campaign for mayor of Atlanta, Ivan Allen Jr. promised to build a sports facility to attract a 
-                    Major League Baseball team. After winning office, Allen chose a 47-acre plot in the Washington-Rawson neighborhood
-                    for the building site, citing its proximity to the state capitol, downtown businesses, and major highways. 
+                    The Summerhill Riot, also known as the Atlanta Rebellion, is a series of events that began on 
+                    September 6, 1966 in the majority black neighborhood of Summerhill following the police shooting of 
+                    an unarmed black man, Harold Prather.
                     {'\n'}{'\n'}
-                    In 1964, Mayor Allen announced that an unidentified team had given him a verbal commitment
-                    to move to Atlanta, provided a stadium was in place by 1966. Soon afterward, the prospective team was revealed to be the
-                    Milwaukee Braves, who announced in October that they intended to move to Atlanta for the 1965 season.
+                    A group of Summerhill residents, which grew to over a thousand
+                    people, gathered together in response to the shooting to protest longterm local problems related to 
+                    ongoing inequities, including discriminatory policing, poor housing, inadequate public services, the 
+                    urban renewal policies that had afffected the neighborhood, and the recent construction of the 
+                    Atlanta-Fulton County Stadium on the edge of Summerhill. 
                     {'\n'}{'\n'}
-                    </Text>
-                    <View styles={{flex: 1}}>
-                        <Image
-                          style={{
-                            resizeMode: "contain",
-                          }}
-                          source={require('../images/allenBravesGame.png')}
-                        />
-                    </View>
-                    <Text style={{ fontFamily:'montserratLightItalic', textAlign: 'center', fontSize: 18, color: 'grey'}}>
-                    Mayor Ivan Allen at the first Atlanta Braves game, 1966
+                    The Student Nonviolent Coordinating Committee (SNCC),
+                    which had been active in Atlanta since its founding in 1960, became involved when members of the 
+                    organization joined the protests. A heavy police presence was met with resistance by protestors, 
+                    which resulted in the image of the events as a "riot." 
                     {'\n'}{'\n'}
-                    </Text>
-                    <Text style={{ fontFamily:'montserratRegular', textAlign: 'center', fontSize: 20, color: 'black'}}>
-                    The new stadium was built on the site of the cleared Washington-Rawson neighborhood,
-                    which a half-century before had been a wealthy neighborhood home to Georgia's governor, among others, but which by the 1960s had fallen 
-                    on hard times. Forty-seven dignitaries took part in a groundbreaking ceremony on April 15, 1964, and that November, the Braves signed 
-                    a 25-year agreement to play there, beginning in 1966. Construction was completed on April 9, 1965, for $18 million, and that night the 
-                    Milwaukee Braves and Detroit Tigers played an exhibition game in the stadium.
+                    As the situation escalated, Mayor Allen visited 
+                    the neighborhood of Summerhill to address protestors directly. Allen placed blame for the events directly
+                    on SNCC. Members of SNCC, including Carmichael, would be arrested soon after. The Summerhill uprising was 
+                    reported in the national media and Mayor Allen would receive widespread praise for his response.
                     {'\n'}{'\n'}
-                    On February 11, 1975, the stadium's
-                    name was changed to the compound Atlanta-Fulton County Stadium after the county threatened to withdraw its financial support.
-                    {'\n'}{'\n'}
-
+                    A chapter in Allen's memoir, Mayor: Notes on the Sixties, titled "Riot" provides his account of the events in Summerhill.
+                    {'\n'}
                     </Text>
                 </ScrollView>
             </View>

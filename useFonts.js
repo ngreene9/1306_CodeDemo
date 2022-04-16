@@ -5,7 +5,9 @@ import { Montserrat_100Thin, Montserrat_100Thin_Italic, Montserrat_200ExtraLight
 const useFonts = async () => {
   await Font.loadAsync({
     montserratLight: Montserrat_300Light,
+    montserratLightItalic: Montserrat_300Light_Italic,
     montserratRegular: Montserrat_400Regular,
+    montserratRegularItalic: Montserrat_400Regular_Italic,
     montserratBold: Montserrat_600SemiBold,
   });
 };

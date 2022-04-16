@@ -15,7 +15,7 @@ export default BookmarkScreen;
 function BookmarkScreen( {navigation}) {
   return (
     <ScrollView>
-        <View style={[styles.container, {flexDirection: 'column', backgroundColor: 'beige'npm},]} >
+        <View style={[styles.container, {flexDirection: 'column', backgroundColor: 'beige'},]} >
             <View style = {{height: '20%', width: '100%', justifyContent: 'center', padding: 1}}>
                 <TouchableOpacity onPressOut={() => navigation.navigate("Fulton County Stadium")} style={{ flex: 1, borderWidth: 3, borderColor: 'black', alignItems: 'center', padding: 4}}>
                     <Text style={{fontFamily:'montserratBold', textAlign: 'center', fontSize: 20, color: 'black'}}>

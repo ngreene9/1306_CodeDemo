@@ -14,6 +14,9 @@ import { useFonts } from 'expo-font';
 import HomeScreen from '../screens/HomeScreen'
 import MapScreen from '../screens/MapScreen';
 import FultonCountyStadiumScreen from '../screens/FultonCountyStadiumScreen';
+import SummerhillRiotScreen from '../screens/SummerhillRiotScreen';
+import SNCChqScreen from '../screens/SNCChqScreen';
+import MlkFuneralScreen from '../screens/MlkFuneralScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,8 +25,12 @@ const HomeStack = () => {
         <Stack.Navigator screenOptions={{headershown:false}} initialRouteName="Home">
             <Stack.Screen name="Home" component={HomeScreen} />
             <Stack.Screen name="Map" component={MapScreen} />
-            <Stack.Screen name="Fulton County Stadium" component={FultonCountyStadiumScreen} options={{gestureEnabled: false}}/>                             
+            <Stack.Screen name="Fulton County Stadium" component={FultonCountyStadiumScreen} options={{gestureEnabled: false}}/>
+            <Stack.Screen name="Summerhill Riots" component={SummerhillRiotScreen} options={{gestureEnabled: false}}/>
+            <Stack.Screen name="SNCC Headquarters" component={SNCChqScreen} options={{gestureEnabled: false}}/>
+            <Stack.Screen name="MLK Funeral" component={MlkFuneralScreen} options={{gestureEnabled: false}}/>
          </Stack.Navigator>
+
     );
 }
 

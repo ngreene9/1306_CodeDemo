@@ -10,9 +10,9 @@ import { useFonts } from 'expo-font';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 //Make sure to inclue this export statement here or it won't import properly on App.js
-export default FultonCountyStadiumScreen;
+export default SNCChqScreen;
 
-function FultonCountyStadiumScreen( {navigation} ) {
+function SNCChqScreen( {navigation} ) {
     const [bookmarkIcon, setBookMarkIcon ] = React.useState(require('../images/BookmarkHollow.png'));
 
     React.useLayoutEffect(() => {
@@ -30,7 +30,6 @@ function FultonCountyStadiumScreen( {navigation} ) {
     return (
 
         <View style={[styles.container, {flexDirection: "column"}]}>
-            
             <View style={{ flex: 3, backgroundColor: 'white' }}>
                 <ScrollView style={{marginVertical: 14, marginHorizontal: 14}} >
                     <View styles={{flex: 1}}>
@@ -38,46 +37,26 @@ function FultonCountyStadiumScreen( {navigation} ) {
                           style={{
                             resizeMode: "contain",
                           }}
-                          source={require('../images/fultonCounty.jpg')}
+                          source={require('../images/snccHQ.jpg')}
                         />
                     </View>
                     <Text style={{ fontFamily:'montserratLightItalic', textAlign: 'center', fontSize: 18, color: 'grey'}}>
-                    An aerial view of the newly constructed Fulton County Stadium
+                    James Forman leads singing in the SNCC office on Raymond street in Atlanta
                     {'\n'}{'\n'}
                     </Text>
                     <Text style={{ fontFamily:'montserratRegular', textAlign: 'center', fontSize: 20, color: 'black'}}>
-                    During his 1961 campaign for mayor of Atlanta, Ivan Allen Jr. promised to build a sports facility to attract a 
-                    Major League Baseball team. After winning office, Allen chose a 47-acre plot in the Washington-Rawson neighborhood
-                    for the building site, citing its proximity to the state capitol, downtown businesses, and major highways. 
-                    {'\n'}{'\n'}
-                    In 1964, Mayor Allen announced that an unidentified team had given him a verbal commitment
-                    to move to Atlanta, provided a stadium was in place by 1966. Soon afterward, the prospective team was revealed to be the
-                    Milwaukee Braves, who announced in October that they intended to move to Atlanta for the 1965 season.
-                    {'\n'}{'\n'}
+                    SNCC's National Office in Atlanta was set up to help organize the organizers. The National Office was there
+                    to help sustain the field staff, providing them with the tools and information they needed to do the work. The 
+                    person behind the National Office structure was SNCC's executive secreatary, James Forman (pictured above). 
+                    {'\n'}
                     </Text>
-                    <View styles={{flex: 1}}>
-                        <Image
-                          style={{
-                            resizeMode: "contain",
-                          }}
-                          source={require('../images/allenBravesGame.png')}
-                        />
-                    </View>
-                    <Text style={{ fontFamily:'montserratLightItalic', textAlign: 'center', fontSize: 18, color: 'grey'}}>
-                    Mayor Ivan Allen at the first Atlanta Braves game, 1966
-                    {'\n'}{'\n'}
-                    </Text>
-                    <Text style={{ fontFamily:'montserratRegular', textAlign: 'center', fontSize: 20, color: 'black'}}>
-                    The new stadium was built on the site of the cleared Washington-Rawson neighborhood,
-                    which a half-century before had been a wealthy neighborhood home to Georgia's governor, among others, but which by the 1960s had fallen 
-                    on hard times. Forty-seven dignitaries took part in a groundbreaking ceremony on April 15, 1964, and that November, the Braves signed 
-                    a 25-year agreement to play there, beginning in 1966. Construction was completed on April 9, 1965, for $18 million, and that night the 
-                    Milwaukee Braves and Detroit Tigers played an exhibition game in the stadium.
-                    {'\n'}{'\n'}
-                    On February 11, 1975, the stadium's
-                    name was changed to the compound Atlanta-Fulton County Stadium after the county threatened to withdraw its financial support.
-                    {'\n'}{'\n'}
-
+                    <Text style={{ fontFamily:'montserratLightItalic', textAlign: 'center', fontSize: 20, color: 'dimgrey'}}>
+                    "I felt a deep responsibility to the field people, who were not as safe as I was in Atlanta. It was always
+                    clear to me that our office in the cityi was, first and foremost, there to service the field and to provide
+                    a link between them and the outside world." 
+                    {'\n'}
+                    - James Forman
+                    {'\n'}
                     </Text>
                 </ScrollView>
             </View>

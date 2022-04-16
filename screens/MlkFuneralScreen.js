@@ -10,9 +10,9 @@ import { useFonts } from 'expo-font';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 //Make sure to inclue this export statement here or it won't import properly on App.js
-export default FultonCountyStadiumScreen;
+export default MlkFuneralScreen;
 
-function FultonCountyStadiumScreen( {navigation} ) {
+function MlkFuneralScreen( {navigation} ) {
     const [bookmarkIcon, setBookMarkIcon ] = React.useState(require('../images/BookmarkHollow.png'));
 
     React.useLayoutEffect(() => {
@@ -30,7 +30,6 @@ function FultonCountyStadiumScreen( {navigation} ) {
     return (
 
         <View style={[styles.container, {flexDirection: "column"}]}>
-            
             <View style={{ flex: 3, backgroundColor: 'white' }}>
                 <ScrollView style={{marginVertical: 14, marginHorizontal: 14}} >
                     <View styles={{flex: 1}}>
@@ -38,46 +37,36 @@ function FultonCountyStadiumScreen( {navigation} ) {
                           style={{
                             resizeMode: "contain",
                           }}
-                          source={require('../images/fultonCounty.jpg')}
+                          source={require('../images/mlkFuneral.png')}
                         />
                     </View>
                     <Text style={{ fontFamily:'montserratLightItalic', textAlign: 'center', fontSize: 18, color: 'grey'}}>
-                    An aerial view of the newly constructed Fulton County Stadium
+                    Citizens of Atlanta fill the streets for over 4 miles, joining together to honor the life of Dr. Martin Luther King Jr.
                     {'\n'}{'\n'}
                     </Text>
                     <Text style={{ fontFamily:'montserratRegular', textAlign: 'center', fontSize: 20, color: 'black'}}>
-                    During his 1961 campaign for mayor of Atlanta, Ivan Allen Jr. promised to build a sports facility to attract a 
-                    Major League Baseball team. After winning office, Allen chose a 47-acre plot in the Washington-Rawson neighborhood
-                    for the building site, citing its proximity to the state capitol, downtown businesses, and major highways. 
-                    {'\n'}{'\n'}
-                    In 1964, Mayor Allen announced that an unidentified team had given him a verbal commitment
-                    to move to Atlanta, provided a stadium was in place by 1966. Soon afterward, the prospective team was revealed to be the
-                    Milwaukee Braves, who announced in October that they intended to move to Atlanta for the 1965 season.
-                    {'\n'}{'\n'}
+                    Like many others, Mayor Allen mourned the assassination of Martin Luther King Jr. and feared for its implications. Mayor
+                    Allen organized a funeral procession that began on Auburn Avenue in the heart of the city and made its way through Atlanta
+                    before concluding at Morehouse's campus
+                    {'\n'}
                     </Text>
-                    <View styles={{flex: 1}}>
-                        <Image
-                          style={{
-                            resizeMode: "contain",
-                          }}
-                          source={require('../images/allenBravesGame.png')}
-                        />
-                    </View>
-                    <Text style={{ fontFamily:'montserratLightItalic', textAlign: 'center', fontSize: 18, color: 'grey'}}>
-                    Mayor Ivan Allen at the first Atlanta Braves game, 1966
+                    <Text style={{ fontFamily:'montserratLightItalic', textAlign: 'center', fontSize: 20, color: 'dimgrey'}}>
+                    "The assasination of Dr. Martin Luther King Jr. Takes from Atlanta one of its greatest citizens of all time, who
+                    honored his home city in the eyes of all the world.
                     {'\n'}{'\n'}
-                    </Text>
-                    <Text style={{ fontFamily:'montserratRegular', textAlign: 'center', fontSize: 20, color: 'black'}}>
-                    The new stadium was built on the site of the cleared Washington-Rawson neighborhood,
-                    which a half-century before had been a wealthy neighborhood home to Georgia's governor, among others, but which by the 1960s had fallen 
-                    on hard times. Forty-seven dignitaries took part in a groundbreaking ceremony on April 15, 1964, and that November, the Braves signed 
-                    a 25-year agreement to play there, beginning in 1966. Construction was completed on April 9, 1965, for $18 million, and that night the 
-                    Milwaukee Braves and Detroit Tigers played an exhibition game in the stadium.
+                    This senseless act of violence takes from our nation one of its greatest leaders of all time in the cause of human
+                    brotherhood and racial amity, and this tragic misdeed takes from our world one of its greatest advocates of the cause of peace
+                    among all nations and all races.
                     {'\n'}{'\n'}
-                    On February 11, 1975, the stadium's
-                    name was changed to the compound Atlanta-Fulton County Stadium after the county threatened to withdraw its financial support.
+                    Although the physical presence of this eminent American has been torn from us, his soul will go on marching on to inspire all Americans
+                    to achieve the goal of equal justice, equal opportunity, and equal citizenship for each and every American, regardless of race, creed, or color.
                     {'\n'}{'\n'}
-
+                    Therefore, I, Ivan Allen Jr., Mayor of the City of Atlanta, do hereby proclaim Monday, April 8, as Martin Luther King Jr. Day of Mourning and call
+                    upon all citizens to observe that day in honor of the memory of our eminent fellow citizen and to join with me in praying that, with God's help,
+                    our nation may attain the goal of complete racial justice and recial equality for which he gave his life."
+                    {'\n'}{'\n'}
+                    - Ivan Allen Jr.
+                    {'\n'}
                     </Text>
                 </ScrollView>
             </View>
