@@ -19,6 +19,7 @@ import FultonCountyStadiumScreen from '../screens/FultonCountyStadiumScreen';
 import HomeStack from './HomeStack.js';
 import BookmarkStack from './BookmarkStack.js';
 import MapStack from './MapStack.js';
+import GuidedStack from './GuidedStack.js';
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
@@ -29,7 +30,7 @@ const DrawerStack = () => {
 			<Drawer.Screen name="Home" component={HomeStack} />
 			<Drawer.Screen name="Bookmarks" component={BookmarkStack} />
 			<Drawer.Screen name="Map" component={MapStack} />
-			<Drawer.Screen name="Guided Tour" component={BookmarkScreen} />
+			<Drawer.Screen name="Guided Tour" component={GuidedStack} />
 		</Drawer.Navigator>
 	);
 };

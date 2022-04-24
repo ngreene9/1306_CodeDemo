@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Image, Modal, Alert, SafeAreaView, ImageBackground,ScrollView, StyleSheet, Text, View, Dimensions, TouchableOpacity, Linking} from 'react-native';
+import { Image, Modal, Alert, SafeAreaView, ImageBackground,ScrollView, StyleSheet, Text, View, Button, Dimensions, TouchableOpacity, Linking} from 'react-native';
 import MapView, {Marker, Callout} from 'react-native-maps';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -10,22 +10,16 @@ import { useFonts } from 'expo-font';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 //Make sure to inclue this export statement here or it won't import properly on App.js
-export default SummerhillRiotScreen;
+export default SummerhillRiotScreenGuided;
 
-function SummerhillRiotScreen( {navigation} ) {
-    const [bookmarkIcon, setBookMarkIcon ] = React.useState(require('../images/BookmarkHollow.png'));
+function SummerhillRiotScreenGuided( {navigation} ) {
+
     React.useLayoutEffect(() => {
-        navigation.setOptions({
-             headerRight: () => (
-             <TouchableOpacity onPress={() => setBookMarkIcon(bookmarkIcon => require('../images/BookmarkSolid.png'))}>
-               <Image 
-                 style={{width: 30, height: 30}}
-                 source={bookmarkIcon} 
-                />
-             </TouchableOpacity>           
-              ),
-        }, [navigation]);
+      navigation.setOptions({
+        headerRight: () => (<Button onPress={() => navigation.navigate('Guided 2')} title="Next"/>)
+      }, [navigation]);
     })
+
     return (
 
         <View style={[styles.container, {flexDirection: "column"}]}>

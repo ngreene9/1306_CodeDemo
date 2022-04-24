@@ -39,6 +39,7 @@ function HomeScreen( {navigation} ) {
      <View style={styles.container}>
         <TouchableOpacity
           //Add button functionality to navigate to guided tour page
+          onPress={() => navigation.navigate('Guided Start')}
           style={{ backgroundColor: 'beige', borderWidth: 2, borderBottomWidth: 1, borderTopLeftRadius: 8, borderTopRightRadius: 8, width: 280, height: 46 }}>
           <Text style={{ textAlign: 'center', fontSize: 28, color: 'black', textShadowColor: 'black', textShadowRadius: 1, textShadowOffset: {width: 1, height: 1} }}>Take Our Guided Tour</Text>
         </TouchableOpacity>
