@@ -79,8 +79,15 @@ Atlanta is one of the fastest growing cities in the United States, but the rapid
  
 ## Install Steps
  * With GitHub, you'll need to pull this repository onto your device. This can be done easily using GitHub Desktop. Locate the large green button near the top of this page labeled "Code" and press it. Once pressed, you will see a popup containing a link to this repository. Copy the link, and then go back to GitHub Desktop. Click the "Repositories" tab, then press "Add". Paste the link, and then the repository will be added to your device in a location of your choosing.
- * Open up your editor (Visual Studio or counterpart), and open up the folder you just saved to your device. From here, pull up the terminal. (This can usually be done with shortcut (ctrl + ') or (ctrl + t). If neither works from your editor, then simply type 'cmd' into your windows search.
+ * Open up your editor (Visual Studio or counterpart), and open up the folder you just saved to your device. From here, pull up the terminal. This can usually be done with shortcut (ctrl + ') or (ctrl + t). If neither works from your editor, then simply type 'cmd' into your windows search.
  * With the terminal open in the project folder, you'll type "npm install expo". This will install all the final prerequisites you need for your computer.
- * To run the application, type "npm start" into the terminal. This will generate a qr code. The first time you scan the QR code, you'll be prompted to download the expo app (Do it). Once the Expo application is downloaded, scanning the QR code will run the Mapping Ivan Allen's Atlanta application on your mobile device.
+ * To run the application, type "npm start" into the terminal. This will generate a QR code. The first time you scan the QR code, you'll be prompted to download the expo app (Do it). Once the Expo application is downloaded, scanning the QR code will run the Mapping Ivan Allen's Atlanta application on your mobile device.
+ 
+ ## Troubleshooting
+ 
+ * When running the application using Expo, occasionally a lapse in network connection can cause the simulation to fail. When this happens, type 'ctrl + c' into the command prompt and then press enter to end the current session. After that, you can type 'npm start' again to start a new session.
+ * If you encounter an error while running the application, you can restart the session by typing 'ctrl + r' into the command terminal
+ * If you encounter any issues that are not addressed in this documentation we recommend searching the issue on stackOverflow and/or the React Native Expo forums linked here: https://forums.expo.dev/
+ 
  
 
