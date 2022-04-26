@@ -3,6 +3,7 @@ Atlanta is one of the fastest growing cities in the United States, but the rapid
 <p align="center">
 <img src="https://github.com/ngreene9/JIE_1306_MappingAtlanta/blob/master/Home%20Screen.png" width="250">            <img src="https://github.com/ngreene9/JIE_1306_MappingAtlanta/blob/master/Guided%20Tour.png" width="250">            <img src="https://github.com/ngreene9/JIE_1306_MappingAtlanta/blob/master/List%20of%20Sites.png" width="250">
 </p>
+
 # Release Notes
 
 ## Version 1.0.0
