@@ -1,6 +1,8 @@
 # **Mapping Ivan Allen's Atlanta**
 Atlanta is one of the fastest growing cities in the United States, but the rapid development has come at the cost of many of Atlanta's most storied civil rights landmarks. Our project intends to create an easy-to-navigate digital archive of civil rights era Atlanta. Users can view historic landmarks via our curated tour, or simply explore the archive on their own.
-
+<p align="center">
+<img src="https://github.com/ngreene9/JIE_1306_MappingAtlanta/blob/master/Home%20Screen.png" width="250">            <img src="https://github.com/ngreene9/JIE_1306_MappingAtlanta/blob/master/Guided%20Tour.png" width="250">            <img src="https://github.com/ngreene9/JIE_1306_MappingAtlanta/blob/master/List%20of%20Sites.png" width="250">
+</p>
 # Release Notes
 
 ## Version 1.0.0
